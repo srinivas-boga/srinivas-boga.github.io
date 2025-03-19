@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Portfolio - [Your Name] | Software Engineer</title>
+  <title>Srinivas Boga | Software Engineer</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -25,7 +25,7 @@
   <!-- Hero Section -->
   <section id="hero">
     <div class="hero-content">
-      <h1>Hi, I'm [Your Name]</h1>
+      <h1>Srinivas Boga</h1>
       <p>Experienced Software Engineer</p>
       <a href="#contact" class="btn">Get in Touch</a>
     </div>
@@ -36,9 +36,12 @@
     <div class="container">
       <h2>About Me</h2>
       <p>
-        I am a passionate software engineer with over X years of experience designing and building scalable solutions.
-        My expertise ranges from developing high-performance web applications to architecting cloud-native systems.
-        I thrive on solving complex problems and continuously learning new technologies.
+        I am a passionate and results-driven software engineer with expertise in full stack development, cloud technologies, 
+        and distributed systems. At BNY Mellon, I have led the development of critical applications and implemented scalable solutions 
+        that improve efficiency and performance. I thrive on solving complex problems and continuously learning new technologies.
+      </p>
+      <p>
+        <a href="Srinivas_Boga_Resume.pdf" target="_blank">Download Resume</a>
       </p>
     </div>
   </section>
@@ -48,18 +51,24 @@
     <div class="container">
       <h2>Experience</h2>
       <div class="experience-item">
-        <h3>Senior Software Engineer – Tech Company</h3>
-        <span class="date">Jan 2020 - Present</span>
-        <p>
-          Lead a team of developers in building enterprise-level applications, architecting scalable systems, and mentoring junior engineers.
-        </p>
+        <h3>Full Stack Developer – BNY Mellon, Pune, India</h3>
+        <span class="date">Jul 2021 – Nov 2023</span>
+        <ul>
+          <li>Led development of the Clawbacks application in the off-boarding platform, improving HR productivity.</li>
+          <li>Developed the front-end using Angular and implemented RESTful APIs with Spring Boot.</li>
+          <li>Implemented a real-time mail notification system with Apache Kafka and SMTP, ensuring fault tolerance.</li>
+          <li>Optimized SQL queries and caching strategies to improve response times by 40%.</li>
+          <li>Automated smoke regression testing using Selenium & Cucumber, reducing manual QA efforts by 50%.</li>
+          <li>Conducted peer code reviews to improve code quality and reduce production bugs by 30% YoY.</li>
+        </ul>
       </div>
       <div class="experience-item">
-        <h3>Software Engineer – Another Company</h3>
-        <span class="date">May 2016 - Dec 2019</span>
-        <p>
-          Developed and maintained robust web applications using modern frameworks, contributing to all phases of the software development lifecycle.
-        </p>
+        <h3>Software Development Intern – BNY Mellon, Remote</h3>
+        <span class="date">May 2020 – Jul 2020</span>
+        <ul>
+          <li>Developed the front-end of an onboarding application with Angular, automating mandatory forms for new employees.</li>
+          <li>Streamlined the onboarding process, significantly reducing manual efforts.</li>
+        </ul>
       </div>
     </div>
   </section>
@@ -69,20 +78,29 @@
     <div class="container">
       <h2>Projects</h2>
       <div class="project-item">
-        <h3>Project Name 1</h3>
+        <h3>In Memory Thread Safe Cache</h3>
         <p>
-          A brief description of the project. Highlight the technologies used and your role in designing and implementing the solution.
+          Implemented a thread-safe in-memory cache in Go with a custom hash table to reduce GC overhead, 
+          and integrated a gRPC server for seamless communication within distributed systems.
         </p>
-        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+        <a href="https://github.com/srinivas-boga/fcache" target="_blank">View on GitHub</a>
       </div>
       <div class="project-item">
-        <h3>Project Name 2</h3>
+        <h3>Dynamic Path Finding for TSP</h3>
         <p>
-          A brief description of another project showcasing your expertise in problem-solving and innovation.
+          Developed an approximation algorithm for the NP-hard Traveling Salesman Problem using Dijkstra’s and Kruskal’s algorithms, 
+          and implemented a parallel version using Go routines and channels.
         </p>
-        <a href="https://github.com/yourusername/project2" target="_blank">View on GitHub</a>
+        <a href="https://github.com/srinivas-boga/gothere" target="_blank">View on GitHub</a>
       </div>
-      <!-- Add more projects as needed -->
+      <div class="project-item">
+        <h3>Service Discovery Server</h3>
+        <p>
+          Built a service discovery server that enables microservices to register and locate one another, 
+          leveraging the Gin framework for REST APIs and MongoDB for persistent storage.
+        </p>
+        <a href="https://github.com/srinivas-boga/discovery-go" target="_blank">View on GitHub</a>
+      </div>
     </div>
   </section>
 
@@ -94,28 +112,27 @@
         <div class="skill-item">
           <h3>Programming Languages</h3>
           <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
             <li>Java</li>
+            <li>TypeScript</li>
+            <li>HTML/CSS</li>
+            <li>SQL</li>
             <li>C++</li>
+            <li>Python</li>
+            <li>Golang</li>
+            <li>CUDA</li>
           </ul>
         </div>
         <div class="skill-item">
-          <h3>Frameworks & Libraries</h3>
+          <h3>Frameworks & Utilities</h3>
           <ul>
-            <li>React</li>
             <li>Angular</li>
-            <li>Django</li>
             <li>Spring Boot</li>
-          </ul>
-        </div>
-        <div class="skill-item">
-          <h3>Tools & Technologies</h3>
-          <ul>
+            <li>Kafka</li>
+            <li>Selenium</li>
             <li>Git</li>
             <li>Docker</li>
-            <li>AWS</li>
             <li>Kubernetes</li>
+            <li>gRPC</li>
           </ul>
         </div>
       </div>
@@ -127,9 +144,14 @@
     <div class="container">
       <h2>Education</h2>
       <div class="education-item">
-        <h3>University Name</h3>
-        <span class="date">Year - Year</span>
-        <p>Bachelor/Master/PhD in Computer Science or a related field</p>
+        <h3>Stony Brook University, NY</h3>
+        <span class="date">Expected 2025</span>
+        <p>Master of Science in Computer Engineering</p>
+      </div>
+      <div class="education-item">
+        <h3>Indian Institute of Technology, Hyderabad</h3>
+        <span class="date">2021</span>
+        <p>Bachelor of Technology in Computer Science</p>
       </div>
     </div>
   </section>
@@ -138,25 +160,27 @@
   <section id="contact">
     <div class="container">
       <h2>Contact</h2>
-      <p>Feel free to reach out via email at <a href="mailto:youremail@example.com">youremail@example.com</a> or use the form below:</p>
+      <p>
+        You can reach me at <a href="mailto:srinivas.boga.dev@gmail.com">srinivas.boga.dev@gmail.com</a> or call me at +1 585-202-2280.
+      </p>
       <form action="https://formspree.io/f/yourFormId" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="_replyto" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
         <button type="submit">Send Message</button>
       </form>
+      <p>
+        Connect with me on 
+        <a href="https://www.linkedin.com/in/boga-srinivas-639338236/" target="_blank">LinkedIn</a> and 
+        <a href="https://github.com/srinivas-boga" target="_blank">GitHub</a>.
+      </p>
     </div>
   </section>
 
   <!-- Footer -->
   <footer>
     <div class="container">
-      <p>&copy; 2025 [Your Name]. All Rights Reserved.</p>
-      <ul class="social-links">
-        <li><a href="https://linkedin.com/in/yourusername" target="_blank">LinkedIn</a></li>
-        <li><a href="https://github.com/yourusername" target="_blank">GitHub</a></li>
-        <!-- Add more social links if desired -->
-      </ul>
+      <p>&copy; 2025 Srinivas Boga. All Rights Reserved.</p>
     </div>
   </footer>
 </body>
