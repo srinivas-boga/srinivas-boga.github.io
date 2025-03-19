@@ -10,7 +10,7 @@
   <!-- Header and Navigation -->
   <header>
     <nav>
-      <ul>
+      <ul class="nav-list">
         <li><a href="#hero">Home</a></li>
         <li><a href="#about">About</a></li>
         <li><a href="#experience">Experience</a></li>
@@ -26,7 +26,7 @@
   <section id="hero">
     <div class="hero-content">
       <h1>Srinivas Boga</h1>
-      <p>Experienced Software Engineer</p>
+      <p> Software Engineer</p>
       <a href="#contact" class="btn">Get in Touch</a>
     </div>
   </section>
@@ -40,9 +40,9 @@
         and distributed systems. At BNY Mellon, I have led the development of critical applications and implemented scalable solutions 
         that improve efficiency and performance. I thrive on solving complex problems and continuously learning new technologies.
       </p>
-      <p>
-        <a href="Srinivas_Boga_Resume.pdf" target="_blank">Download Resume</a>
-      </p>
+      <!-- <p>
+        <a href="Srinivas_Boga_Resume.pdf" target="_blank" class="btn">Download Resume</a>
+      </p> -->
     </div>
   </section>
 
@@ -50,25 +50,27 @@
   <section id="experience">
     <div class="container">
       <h2>Experience</h2>
-      <div class="experience-item">
-        <h3>Full Stack Developer – BNY Mellon, Pune, India</h3>
-        <span class="date">Jul 2021 – Nov 2023</span>
-        <ul>
-          <li>Led development of the Clawbacks application in the off-boarding platform, improving HR productivity.</li>
-          <li>Developed the front-end using Angular and implemented RESTful APIs with Spring Boot.</li>
-          <li>Implemented a real-time mail notification system with Apache Kafka and SMTP, ensuring fault tolerance.</li>
-          <li>Optimized SQL queries and caching strategies to improve response times by 40%.</li>
-          <li>Automated smoke regression testing using Selenium & Cucumber, reducing manual QA efforts by 50%.</li>
-          <li>Conducted peer code reviews to improve code quality and reduce production bugs by 30% YoY.</li>
-        </ul>
-      </div>
-      <div class="experience-item">
-        <h3>Software Development Intern – BNY Mellon, Remote</h3>
-        <span class="date">May 2020 – Jul 2020</span>
-        <ul>
-          <li>Developed the front-end of an onboarding application with Angular, automating mandatory forms for new employees.</li>
-          <li>Streamlined the onboarding process, significantly reducing manual efforts.</li>
-        </ul>
+      <div class="tiles">
+        <div class="experience-item tile">
+          <h3>Full Stack Developer – BNY Mellon, Pune, India</h3>
+          <span class="date">Jul 2021 – Nov 2023</span>
+          <ul>
+            <li>Led development of the Clawbacks application in the off-boarding platform, improving HR productivity.</li>
+            <li>Developed front-end using Angular and implemented RESTful APIs with Spring Boot.</li>
+            <li>Implemented a real-time mail notification system with Apache Kafka and SMTP for fault tolerance.</li>
+            <li>Optimized SQL queries and caching strategies to improve response times by 40%.</li>
+            <li>Automated smoke regression testing with Selenium & Cucumber, reducing manual QA efforts by 50%.</li>
+            <li>Conducted peer code reviews, reducing production bugs by 30% YoY.</li>
+          </ul>
+        </div>
+        <div class="experience-item tile">
+          <h3>Software Development Intern – BNY Mellon, Remote</h3>
+          <span class="date">May 2020 – Jul 2020</span>
+          <ul>
+            <li>Developed the front-end of an onboarding application using Angular.</li>
+            <li>Automated mandatory form completion, streamlining the onboarding process.</li>
+          </ul>
+        </div>
       </div>
     </div>
   </section>
@@ -77,29 +79,28 @@
   <section id="projects">
     <div class="container">
       <h2>Projects</h2>
-      <div class="project-item">
-        <h3>In Memory Thread Safe Cache</h3>
-        <p>
-          Implemented a thread-safe in-memory cache in Go with a custom hash table to reduce GC overhead, 
-          and integrated a gRPC server for seamless communication within distributed systems.
-        </p>
-        <a href="https://github.com/srinivas-boga/fcache" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-item">
-        <h3>Dynamic Path Finding for TSP</h3>
-        <p>
-          Developed an approximation algorithm for the NP-hard Traveling Salesman Problem using Dijkstra’s and Kruskal’s algorithms, 
-          and implemented a parallel version using Go routines and channels.
-        </p>
-        <a href="https://github.com/srinivas-boga/gothere" target="_blank">View on GitHub</a>
-      </div>
-      <div class="project-item">
-        <h3>Service Discovery Server</h3>
-        <p>
-          Built a service discovery server that enables microservices to register and locate one another, 
-          leveraging the Gin framework for REST APIs and MongoDB for persistent storage.
-        </p>
-        <a href="https://github.com/srinivas-boga/discovery-go" target="_blank">View on GitHub</a>
+      <div class="tiles">
+        <div class="project-item tile">
+          <h3>In Memory Thread Safe Cache</h3>
+          <p>
+            Implemented a thread-safe in-memory cache in Go with a custom hash table to reduce GC overhead and integrated a gRPC server for distributed system communication.
+          </p>
+          <a href="https://github.com/srinivas-boga/fcache" target="_blank" class="btn-link">View on GitHub</a>
+        </div>
+        <div class="project-item tile">
+          <h3>Dynamic Path Finding for TSP</h3>
+          <p>
+            Developed an approximation algorithm for the NP-hard Traveling Salesman Problem using Dijkstra’s and Kruskal’s algorithms, including a parallel implementation with Go routines.
+          </p>
+          <a href="https://github.com/srinivas-boga/gothere" target="_blank" class="btn-link">View on GitHub</a>
+        </div>
+        <div class="project-item tile">
+          <h3>Service Discovery Server</h3>
+          <p>
+            Built a service discovery server enabling microservices to register and discover each other using the Gin framework for REST APIs and MongoDB for storage.
+          </p>
+          <a href="https://github.com/srinivas-boga/discovery-go" target="_blank" class="btn-link">View on GitHub</a>
+        </div>
       </div>
     </div>
   </section>
@@ -108,8 +109,8 @@
   <section id="skills">
     <div class="container">
       <h2>Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-item">
+      <div class="tiles">
+        <div class="skill-item tile">
           <h3>Programming Languages</h3>
           <ul>
             <li>Java</li>
@@ -122,7 +123,7 @@
             <li>CUDA</li>
           </ul>
         </div>
-        <div class="skill-item">
+        <div class="skill-item tile">
           <h3>Frameworks & Utilities</h3>
           <ul>
             <li>Angular</li>
@@ -143,15 +144,17 @@
   <section id="education">
     <div class="container">
       <h2>Education</h2>
-      <div class="education-item">
-        <h3>Stony Brook University, NY</h3>
-        <span class="date">Expected 2025</span>
-        <p>Master of Science in Computer Engineering</p>
-      </div>
-      <div class="education-item">
-        <h3>Indian Institute of Technology, Hyderabad</h3>
-        <span class="date">2021</span>
-        <p>Bachelor of Technology in Computer Science</p>
+      <div class="tiles">
+        <div class="education-item tile">
+          <h3>Stony Brook University, NY</h3>
+          <span class="date">Expected 2025</span>
+          <p>Master of Science in Computer Engineering</p>
+        </div>
+        <div class="education-item tile">
+          <h3>Indian Institute of Technology, Hyderabad</h3>
+          <span class="date">2021</span>
+          <p>Bachelor of Technology in Computer Science</p>
+        </div>
       </div>
     </div>
   </section>
@@ -161,7 +164,7 @@
     <div class="container">
       <h2>Contact</h2>
       <p>
-        You can reach me at <a href="mailto:srinivas.boga.dev@gmail.com">srinivas.boga.dev@gmail.com</a> or call me at +1 585-202-2280.
+        You can reach me at <a href="mailto:srinivas.boga.dev@gmail.com">srinivas.boga.dev@gmail.com</a> or call +1 585-202-2280.
       </p>
       <form action="https://formspree.io/f/yourFormId" method="POST">
         <input type="text" name="name" placeholder="Your Name" required>
